@@ -1,0 +1,38 @@
+@use "./base/reset";
+@use "./base/variables" as *;
+@use "./base/fonts";
+@use "./base/mixins" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-y: scroll;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+* {
+  outline: none;
+}
+
+.square-image-container {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+.square-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
